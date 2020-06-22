@@ -1,0 +1,90 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Poppins";
+}
+
+.hidden {
+  visibility: hidden;
+  font-size: 1px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+}
+
+.main-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*** Text ***/
+
+.text-container {
+  /* border: 1px solid red; */
+  flex-basis: 38%;
+  height: 35%;
+  color: #fff;
+}
+
+h1 {
+  /* border: 1px solid black; */
+  font-size: 3rem;
+  line-height: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+
+h2 {
+  /* border: 1px solid black; */
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*** Form ***/
+
+.form-container {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+  height: 80%;
+}
+
+form {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+
+input,
+button {
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-style: solid;
+  border-radius: 0.3rem;
+}
+
+button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+}
