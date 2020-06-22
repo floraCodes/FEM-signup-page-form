@@ -113,6 +113,10 @@ button {
   box-shadow: 0 0.2rem hsl(154, 50%, 47%);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 form > p {
   text-align: center;
   font-size: 0.7rem;
