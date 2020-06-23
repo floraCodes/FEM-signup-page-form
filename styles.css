@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Poppins";
+  font-size: 16px;
 }
 
 .hidden {
@@ -18,7 +19,6 @@ body {
   height: 100vh;
   background-image: url(/images/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
-  font-size: 16px;
 }
 
 .main-container {
@@ -110,7 +110,7 @@ button {
   background-color: hsl(154, 59%, 51%);
   border: none;
   padding: 0.9rem;
-  box-shadow: 0 0.2rem hsl(154, 50%, 47%);
+  box-shadow: 0 0.3rem hsl(154, 50%, 47%);
 }
 
 button:hover {
@@ -128,4 +128,67 @@ a {
   font-weight: 700;
   text-decoration: none;
   color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 576px) {
+  body {
+    height: 100%;
+    width: 100vw;
+  }
+
+  .main-container {
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .text-container {
+    height: 100%;
+    width: 100%;
+    margin: 4rem 0 3rem 0;
+    flex-basis: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  h2 {
+    padding: 0 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+  .form-container {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  h3 {
+    padding: 1.5rem 4.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  h3 > span {
+    font-size: 1.25rem;
+  }
+  form {
+    padding: 1.7rem;
+  }
+  input {
+    padding: 1.2rem 1.2rem;
+    font-weight: 700;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+  }
+
+  form > p {
+    padding: 0 1rem;
+    line-height: 1.6rem;
+  }
+
+  form > p,
+  a {
+    font-size: 0.85rem;
+  }
 }
